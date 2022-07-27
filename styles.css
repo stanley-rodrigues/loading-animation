@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(255,0,0,1) 100%);
+}
+
+
+.loading {
+    position: fixed;
+    width: 190px;
+    height: 190px;
+    display: block;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.loading .loading-active {
+
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    display: block;
+    border-radius: 50%;
+    border: 30px double transparent;
+    border-top-color: orange;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.loading .loading-active::before {
+
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    width:  109px;
+    height: 109px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: orange ;
+}
+
+
+@-webkit-keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
