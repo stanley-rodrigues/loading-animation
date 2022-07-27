@@ -6,7 +6,7 @@ Projeto para estudo sobre @keyframes animações.
 
 
 <p aligh="center">
-    <img src="https://github.com/stanley-rodrigues/loading-animation/blob/master/assets/mobile%20(1).gif?raw=true" />
+    <img width="250" src="https://github.com/stanley-rodrigues/loading-animation/blob/master/assets/mobile%20(1).gif?raw=true" />
     </p>
 
     
